@@ -65,9 +65,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ disk_free, "[Free  %s]   ", "/"	      },
-	{ cpu_perc, "[CPU  %s%%]   ", NULL	      },
 
-	{ ram_perc, "[RAM  %s%%]   ", NULL	      },
+	{ run_command, "[VPN - %s]   ", "piactl get connectionstate"	      },
+//	{ run_command, "-%s-", "piactl get vpnip"	      },
+	{ disk_free, "[Free - %s]   ", "/"	      },
+	{ cpu_perc, "[CPU - %s%%]   ", NULL	      },
+	{ ram_perc, "[RAM - %s%%]   ", NULL	      },
 	{ datetime, "%s",           "%F %T" },
 };
